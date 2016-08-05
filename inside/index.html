@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>首页</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" href="../css/fullcalendar.css" />
+    <link rel="stylesheet" href="../css/matrix-style.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/matrix-media.css" />
+    <link href="../font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/jquery.gritter.css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <!--breadcrumbs-->
+    <!--End-breadcrumbs-->
+    <div class="index_header">
+        <form>
+            <div class="index_select">
+                <input type="radio" name="index_select" value=""><span>关闭</span>
+                <input type="radio" name="index_select" value=""><span>全屏</span>
+            </div>
+            <div class="five_btn">
+                <input type="button" class="index_btn1" value="故障">
+                <input type="button" class="index_btn2" value="常闭">
+                <input type="button" class="index_btn3" value="有车">
+                <input type="button" class="index_btn4" value="断线">
+                <input type="button" class="index_btn5" value="报警">
+            </div>
+            <div class="five_text">
+                <select>
+                    <option>全部</option>
+                </select>
+                <span>查找车卡</span><input type="text">
+                <span>停车区域</span><input type="text">
+                <span>停车点</span><input type="text">
+                <span>站点</span><input type="text">
+            </div>
+        </form>
+    </div>
+    <!--end-main-container-part-->
+    <!--Footer-part-->
+    <!--end-Footer-part-->
+    <script src="../js/excanvas.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.ui.custom.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.flot.min.js"></script>
+    <script src="../js/jquery.flot.resize.min.js"></script>
+    <script src="../js/jquery.peity.min.js"></script>
+    <script src="../js/fullcalendar.min.js"></script>
+    <script src="../js/matrix.js"></script>
+    <script src="../js/matrix.dashboard.js"></script>
+    <script src="../js/jquery.gritter.min.js"></script>
+    <script src="../js/matrix.interface.js"></script>
+    <script src="../js/matrix.chat.js"></script>
+    <script src="../js/jquery.validate.js"></script>
+    <script src="../js/matrix.form_validation.js"></script>
+    <script src="../js/jquery.wizard.js"></script>
+    <script src="../js/jquery.uniform.js"></script>
+    <script src="../js/select2.min.js"></script>
+    <script src="../js/matrix.popover.js"></script>
+    <script src="../js/jquery.dataTables.min.js"></script>
+    <script src="../js/matrix.tables.js"></script>
+    <script src="../js/jquery-1.10.2.min_f2fb5194.js"></script>
+    <script>
+    $(document).ready(function() {
+        if ($(".circle_per1").text() == "100%") {
+            $(".circle_per1").next().css("background", "#6a8abd")
+        };
+        if ($(".circle_per2").text() == "100%") {
+            $(".circle_per2").next().css("background", "#73c1b1")
+        };
+        if ($(".circle_per3").text() == "100%") {
+            $(".circle_per3").next().css("background", "#f89735")
+        };
+    });
+    </script>
+</body>
+
+</html>

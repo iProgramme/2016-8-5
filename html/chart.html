@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>图形展示</title>
+    <style type="text/css">
+.x-chart-legend,.x-chart-tootip,#canvas2 .x-chart-grid,#canvas2 .x-chart-axis{display: none;}
+      .the_line{position: absolute;top: 50px;left: 49px}
+      .the_line li{width: 91px;border-right: 1px solid #f6f6f6;height: 290px;display: inline-block;}
+      .the_line li:first-child,.the_line li:last-child{width: 46px}
+      .the_line li:first-child{border-left: 1px solid #f6f6f6}
+      body{background: none}
+    </style>
+</head>
+<body>
+<ul class="the_line">
+ <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+</ul>
+ <div class="number">每月骑车人数</div>
+ <p class="square">
+ <span class="square1">借车</span><span class="square2">还车</span>
+   
+ </p>
+<div class="detail-section" style="height:380px">
+    <div id="canvas1">
+ 
+    </div>
+    <div id="canvas2" style="position: relative;top: -424px">
+ 
+    </div>
+</div>
+ 
+<script src="../js/acharts-min"></script>
+<!-- https://g.alicdn.com/bui/acharts/1.0.29/acharts-min.js -->
+ 
+ 
+ 
+  <script type="text/javascript">
+// 下面一层区域图
+        var chart1 = new AChart({
+          theme : AChart.Theme.SmoothBase,
+          id : 'canvas1',
+          // width : 600,
+          height : 420,
+          plotCfg : {
+            margin : [50,50,80] //画板的边距
+          },
+          xAxis : {
+            categories : ['一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一月','十二月']
+          },
+
+
+          // 添加后没有点
+          seriesOptions : { //设置多个序列共同的属性
+                areaCfg : { //不同类型的图对应不同的共用属性，lineCfg,areaCfg,columnCfg等，type + Cfg 标示
+                  smooth : true,
+                  markers : {
+                    single : true,
+                    marker : {
+                      fill : null,
+                      stroke : '#eff',
+                      radius : 6,
+                      'stroke-width':4
+                    },
+                    actived : {
+                      fill : null,
+                      stroke : '#eff',
+                      radius : 6,
+                      'stroke-width':4
+                    }
+                  }
+                }
+              },
+          tooltip : {
+            valueSuffix : '辆'/*,
+            shared : true, //是否多个数据序列共同显示信息
+            crosshairs : true //是否出现基准线
+            */
+          },
+          series : [{
+                type : 'area',
+                markers : {
+                  single : true
+                },
+                name: '借车量',
+                data: [11, 22, 33, 44, 155, 166, 177, 88, 199, 300, 311, 412]
+            }, {
+                name: '借车',
+ 
+                data: [11, 22, 33, 44, 155, 166, 177, 88, 199, 300, 311, 412]
+            },{
+                type : 'area',
+                markers : {
+                  single : true
+                },
+                name: '还车量',
+                data: [001, 002, 003, 044, 55, 66, 77, 8.8, 99, 100, 211, 312]
+            }, {
+                name: '还车',
+ 
+                data: [001, 002, 003, 044, 55, 66, 77, 8.8, 99, 100, 211, 312]
+            }]
+        });
+ 
+        chart1.render();
+
+
+// 压在上面的曲线
+        var chart2 = new AChart({
+          theme : AChart.Theme.Smooth4,
+          id : 'canvas2',
+          // width : 600,
+          height :420,
+          plotCfg : {
+            margin : [50,50,80] //画板的边距
+          },
+          xAxis : {
+            categories: ['一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一月','十二月']
+          },
+          yAxis : [{
+            position : 'left',
+          },{
+            type : 'number',
+            position : 'right',
+            line : null,
+            tickLine : null,
+            labels : {
+              label : {
+                x : 12
+              }
+            }
+          }],
+          seriesOptions : { //设置多个序列共同的属性
+            lineCfg : { //不同类型的图对应不同的共用属性，lineCfg,areaCfg,columnCfg等，type + Cfg 标示
+              smooth : true
+              
+            }
+          },
+          series : [ {
+              name: '借车',
+              type: 'line',
+              data: [11, 22, 33, 44, 155, 166, 177, 88, 199, 300, 311, 412],
+              suffix: '辆'
+          },
+          {
+              name: '还车',
+              type: 'line',
+              data: [001, 002, 003, 044, 55, 66, 77, 8.8, 99, 100, 211, 312],
+              suffix: '辆'
+          }]
+              
+        });
+ 
+        chart2.render()
+  </script>
+</body>
+</html>
