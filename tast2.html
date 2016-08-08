@@ -27,25 +27,25 @@
     </header>
     <!--close-Header-part-->
     <!--sidebar-menu-->
-    <div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
+    <div id="sidebar" class="sidebar-collapse"><a href="#" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
         <ul>
             <li class="all_active"><a href="javascript:void(0);"><i class="icon icon-home"></i> <span>我的主页</span></a></li>
             <li class="submenu"> <a href="#"><i class="icon icon-signal"></i> <span>业务办理</span></a> 
-            <ul>
-                    <li><a href="javascript:void(0);">开户</a></li>
-                    <li><a href="javascript:void(0);">充值</a></li>
-                    <li><a href="javascript:void(0);">冲正</a></li>
-                    <li><a href="javascript:void(0);">卡启用</a></li>
-                    <li><a href="javascript:void(0);">挂失/解挂</a></li>
-                    <li><a href="javascript:void(0);">解锁</a></li>
-                    <li><a href="javascript:void(0);">强制解锁</a></li>
-                    <li><a href="javascript:void(0);">换卡/补卡</a></li>
-                    <li><a href="javascript:void(0);">销户</a></li>
-                    <li><a href="javascript:void(0);">卡查询</a></li>
-                    <li><a href="javascript:void(0);">初始化</a></li>
-                    <li><a href="javascript:void(0);">卡还原</a></li>
-                    <li><a href="javascript:void(0);">初修正</a></li>
-                    <li><a href="javascript:void(0);">超级卡还原</a></li>
+            <ul class="nav nav-second-level">
+                    <li><a href="inside/index.html" class="J_menuItem">开户</a></li>
+                    <li><a href="form1_0.html" class="J_menuItem">充值</a></li>
+                    <li><a href="javascript:void(0);" class="J_menuItem">冲正</a></li>
+                    <li><a href="javascript:void(0);" class="J_menuItem">卡启用</a></li>
+                    <li><a href="javascript:void(0);" class="J_menuItem">挂失/解挂</a></li>
+                    <li><a href="javascript:void(0);" class="J_menuItem">解锁</a></li>
+                    <li><a href="javascript:void(0);" class="J_menuItem">强制解锁</a></li>
+                    <li><a href="javascript:void(0);" class="J_menuItem">换卡/补卡</a></li>
+                    <li><a href="javascript:void(0);" class="J_menuItem">销户</a></li>
+                    <li><a href="javascript:void(0);" class="J_menuItem">卡查询</a></li>
+                    <li><a href="javascript:void(0);" class="J_menuItem">初始化</a></li>
+                    <li><a href="javascript:void(0);" class="J_menuItem">卡还原</a></li>
+                    <li><a href="javascript:void(0);" class="J_menuItem">初修正</a></li>
+                    <li><a href="javascript:void(0);" class="J_menuItem">超级卡还原</a></li>
                 </ul></li>
             <li class="submenu"> <a href="#"><i class="icon icon-inbox"></i> <span>调度监控</span></a> </li>
             <li class="submenu"><a href="#"><i class="icon icon-th"></i> <span>查询分析</span></a></li>
@@ -152,113 +152,6 @@
     }
     on_mouse();
 
-    var arr = [
-        ["inside/index.html"],
-        ['','','','','form-index2_1.html'],
-        [],
-        [],
-        [],
-        ["form-index1.html", "form-index1.html"],
-        ["form-index2.html", "form-index2_1.html"]
-    ];
-    // 点击添加标签页
-    $("#sidebar li li").click(function() {
-        var j = $(this).parents('li').index(),
-            i = $(this).index(),
-            ttt = $(this).text(),
-            showing = "<div class='fl tabs_all'><div class='fl f21 active'></div><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>";
-        $(".tabs .tabs_all .f21").removeClass("active");
-        if ($(".tabs").text().indexOf($(this).text()) != -1) {
-            //alert($(".tabs:contains('"+ttt+"')").text());
-            $(".tabs_all .f21:contains('" + ttt + "')").addClass("active");
-            $(".tabs_all:contains('" + ttt + "')").css("display", "block");
-        } else {
-            $(".tabs").append(showing);
-            $(".tabs_all:last").find(".f21").append($(this).text());
-        }
-
-        fun1();
-        fun2();
-        $("#testFrame").attr('src', arr[j][i]);
-        $("li").removeClass('active');
-        $("li").removeClass('all_active');
-            $(".tabs_all").removeClass("index");
-
-        $(this).addClass('active');
-        $(this).parents("li").addClass('all_active');
-        // 小标题鼠标滑过事件
-        function active() {
-            // 鼠标滑过事件
-            $(".tabs_all").hover(function() {
-                $(this).css("background-color", "#29313e");
-                $(this).children('.f21').css("color", "#cfd0d7");
-            }, function() {
-                $(".tabs_all .f21").css("color", "#494949");
-                $(".tabs_all").css("background-color", "#cccccc");
-                $(".tabs_all .active").parents('.tabs_all').css("background-color", "#29313e");
-                $(".tabs_all .active").css("color", "#cfd0d7");
-
-            })
-        }
-        active();
-        $(".tabs_all").css("background-color", "#ccc");
-        $(".tabs_all .f21").css("color", "#494949");
-        $(".tabs_all .active").parents('.tabs_all').css("background-color", "#29313e");
-        $(".tabs_all .active").css("color", "#cfd0d7");
-        // 鼠标滑过事件结束
-    });
-fun3();
-    fun1();
-    fun2();
-    $(".tabs_all .active").parents('.tabs_all').css("background-color", "#29313e");
-    $(".tabs_all .active").css("color", "#cfd0d7");
-    
-    // 点击右边的来切换标签页，不包括点击“我的主页”
-    function fun1() {
-        $(".tabs_all").click(function() {
-            $("#sidebar li").removeClass("active");
-            $(".tabs_all").removeClass("index");
-            $("#sidebar li").removeClass("all_active");
-            $(".tabs .tabs_all .f21").removeClass("active");
-            var num2 = $(this).index();
-            var ppp = $(this).children('.f21').text();
-            $(".tabs_all").eq(num2).children(".f21").addClass("active");
-            $("#sidebar li ul").hide();
-            // 添加缺省状态
-            $("#sidebar li li:contains('" + ppp + "')").addClass("active");
-            $("#sidebar li li:contains('" + ppp + "')").parents('li').addClass("all_active");
-            $("#sidebar li:contains('" + ppp + "')").addClass("all_active");
-            // 切换页面
-            var a = $("#sidebar li li:contains('" + ppp + "')").index();
-            var b = $("#sidebar li li:contains('" + ppp + "')").parents('li').index();
-            $("#testFrame").attr("src", arr[b][a]);
-            var common_tab=$(".common_tab").width();
-
-
-        })
-    }
-
-    function fun2() {
-        // 点击关闭标签页并显示首页
-        $(".tabs_all span").click(function() {
-            // 关闭现有的
-            $(".tabs_all .f21").removeClass("active");
-            $(".submenu").removeClass("all_active");
-            $(this).parents('.tabs_all').hide();
-            $("#sidebar li:first").addClass('all_active');
-            $(".tabs_all:first").addClass('index');
-            $("#testFrame").attr('src', 'html/index.html');
-            event.stopPropagation();
-
-        })
-    }
-    // 点击我的主页来换标签页
-    function fun3() {
-        $(".tabs_all:first-child").click(function () {
-            $("#testFrame").attr("src", 'inside/index.html');
-            
-        })
-    }
     </script>
     <!-- 标签切换 -->
     <script type="text/javascript">

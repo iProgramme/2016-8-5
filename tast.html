@@ -29,7 +29,7 @@
     <!--sidebar-menu-->
     <div id="sidebar" class="demo-content"><a href="#" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
         <ul class="toolbar">
-            <li class="all_active"><a href="javascript:void(0);"><i class="icon icon-home"></i> <span>我的主页</span></a></li>
+            <li class="all_active common_index"><a href="javascript:void(0);"><i class="icon icon-home"></i> <span>我的主页</span></a></li>
             <li class="submenu"> <a href="#"><i class="icon icon-signal"></i> <span>业务办理</span></a>
                 <ul>
                     <li class="list1_0"><a href="javascript:void(0);">开户</a></li>
@@ -179,67 +179,76 @@
                 title: '测试标签',
                 href: 'inside/index.html',
                 actived: true
-            }, {
-                title: '测试标签2',
-                href: 'http://www.baidu.com'
-            }]
+            }
+            // , {
+            //     title: '测试标签2',
+            //     href: 'http://www.baidu.com'
+            // }
+            ]
         });
 
         tab.render();
-        // 业务办理
-        $('#sidebar .list1_0').on('click', function() {
+        $('#sidebar .common_index').on('click', function() {
             var config = {
                 title: '开户',
                 href: 'inside/index.html'
             };
             tab.addTab(config);
         });
+        // 业务办理
+        $('#sidebar .list1_0').on('click', function() {
+            var config = {
+                title: '开户',
+                href: 'form1_0.html'
+            };
+            tab.addTab(config);
+        });
         $('#sidebar .list1_1').on('click', function() {
             var config = {
                 title: '充值',
-                href: ''
+                href: 'form1_1.html'
             };
             tab.addTab(config);
         });
         $('#sidebar .list1_2').on('click', function() {
             var config = {
                 title: '冲正',
-                href: ''
+                href: 'form1_2.html'
             };
             tab.addTab(config);
         });
         $('#sidebar .list1_3').on('click', function() {
             var config = {
                 title: '卡启用',
-                href: ''
+                href: 'form1_3.html'
             };
             tab.addTab(config);
         });
         $('#sidebar .list1_4').on('click', function() {
             var config = {
                 title: '挂失/解挂',
-                href: ''
+                href: 'form1_4.html'
             };
             tab.addTab(config);
         });
         $('#sidebar .list1_5').on('click', function() {
             var config = {
                 title: '解锁',
-                href: ''
+                href: 'form1_5.html'
             };
             tab.addTab(config);
         });
         $('#sidebar .list1_6').on('click', function() {
             var config = {
                 title: '强制解锁',
-                href: ''
+                href: 'form1_6.html'
             };
             tab.addTab(config);
         });
         $('#sidebar .list1_7').on('click', function() {
             var config = {
                 title: '换卡/补卡',
-                href: ''
+                href: 'form1_7.html'
             };
             tab.addTab(config);
         });
@@ -280,15 +289,25 @@
         });
         $('#sidebar .list1_13').on('click', function() {
             var config = {
-                title: '超级卡还原',
+                title: '超级卡还原超级卡还原',
                 href: ''
             };
             tab.addTab(config);
         });
 
-
-
     });
+    $("#sidebar .toolbar li li").click(function () {
+          var qqq=$(".bui-nav-tab-item").index()+1;
+        // $(".tab-nav-list").width()=xxx;
+        var width,ttt;
+        for (var i = 0; i < qqq; i++) {
+            width=$(".bui-nav-tab-item:last-child").width();
+            ttt=width+ttt
+        }
+
+        alert(width);
+
+    })
     </script>
     <!-- 奥斯卡级丢哈斯看多好看 -->
     <!--end-Footer-part-->

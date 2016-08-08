@@ -358,7 +358,6 @@
 }
 .bui-nav-tab-item {
   float: left;margin-top: 5px;
-  width: 140px;
   height: 30px;line-height: 30px;
   position: relative;
   cursor: pointer;
@@ -367,7 +366,7 @@
 }
 .bui-nav-tab-item .tab-item-inner {
   background-position: -15px -4px;
-  padding: 0 15px;width: 100px;
+  padding: 0 15px;
   background-color: #ccc;border-radius: 5px;color: #494949;height: 30px;overflow: hidden; text-overflow:ellipsis; white-space: nowrap;
 }
 .bui-nav-tab-item .l,
