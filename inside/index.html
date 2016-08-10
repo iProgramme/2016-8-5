@@ -19,19 +19,27 @@
 <body>
     <!--breadcrumbs-->
     <!--End-breadcrumbs-->
-    <div class="index_header">
+    <div class="index_header index_header1">
         <form>
             <div class="index_select">
                 <input type="radio" name="index_select" value="1" checked><span>表格</span>
                 <input type="radio" name="index_select" value="2"><span>GIS</span>
             </div>
-            <div class="five_btn">
+            <div class="five_btn five_btn1">
                 <input type="button" class="index_btn1" value="故障">
                 <input type="button" class="index_btn2" value="常闭">
                 <input type="button" class="index_btn3" value="有车">
                 <input type="button" class="index_btn4" value="无车">
                 <input type="button" class="index_btn5" value="报警">
                 <input type="button" class="index_btn6" value="断线">
+            </div>
+            <div class="five_btn five_btn2 disN">
+                <input type="button" class="index_btn1" value="报警">
+                <input type="button" class="index_btn2" value="常闭">
+                <input type="button" class="index_btn3" value="断线">
+                <input type="button" class="index_btn4" value="故障">
+                <input type="button" class="index_btn5" value="有车">
+                <input type="button" class="index_btn6" value="无车">
             </div>
             <div class="five_text fr">
                 <select>
@@ -508,7 +516,8 @@
             </li>
         </ul>
     </div>
-    <div class="baidu_map disN">
+    <div class="disN index_header2">
+    
     <iframe src="baidu_map.html" frameborder="0"></iframe>
     </div>
     <!--end-main-container-part-->
@@ -579,8 +588,22 @@
             event.stopPropagation();
     })
     // 切换表格和地图
-
-    $("input[name='index_select']:checked").val();
+     // 切换表格和地图
+    $(".index_select input").click(function () {
+        // 获取点击的value值
+        var value_num=$(this).attr('value');
+        if (value_num==2) {
+            $(".index_container").hide();
+            $(".five_btn1").hide();
+            $(".five_btn2").css('display','inline-block');
+            $(".index_header2").show()
+        } else {
+            $(".index_container").show();
+            $(".five_btn1").show();
+            $(".five_btn2").hide();
+            $(".index_header2").hide()
+        }
+    })
     </script>
 </body>
 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+ 2 <html lang="en">
+ 3 <head>
+ 4     <meta charset="UTF-8">
+ 5     <title>radio选项卡切换</title>
+ 6     <style type="text/css">
+ 7         *{margin:0;padding:0;}
+ 8         .test-box{width: 50%;margin: 10px auto 0;padding-top: 25px;position: relative;}
+ 9         .test-box>.test-tab{width:100%;}
+10         .test-box .test-label{background-color: #eee;display: inline-block;width: 25%;text-align: center;font-size: 16px;line-height: 24px;box-sizing: border-box;}
+11         .test-label{position: absolute;top: 0;border:solid #ccc; border-width:1px 0px 1px 1px;}
+12         .test-tab:nth-child(1) .test-label{left: 0;}
+13         .test-tab:nth-child(2) .test-label{left: 25%;}
+14         .test-tab:nth-child(3) .test-label{left: 50%;}
+15         .test-tab:last-child .test-label{border-right-width:1px;}
+16         .test-box .content{background-color: #fff;height: 20px;display: none;border:1px solid #ccc;}
+17         .test-box input.test-radio{display: none;}
+18         .test-box input:checked~.test-label{background-color: #fff;border-bottom: 1px solid #fff;}
+19         .test-box input:checked~.content{display: block;}
+20     </style>
+21 </head>
+22 <body>
+23     <div class="test-box">
+24         <div class="test-tab">
+25             <input type="radio" class="test-radio" id="radio1" name="test-radio" checked>
+26             <label for="radio1" class="test-label">选项卡1</label>
+27             <div class="content"><P>asdasdsad1</P></div>
+28         </div>
+29         <div class="test-tab">
+30             <input type="radio" class="test-radio" id="radio2" name="test-radio">
+31             <label for="radio2" class="test-label">选项卡2</label>
+32             <div class="content"><P>asdasdsad2</P></div>
+33         </div>
+34         <div class="test-tab">
+35             <input type="radio" class="test-radio" id="radio3" name="test-radio">
+36             <label for="radio3" class="test-label">选项卡3</label>
+37             <div class="content"><P>asdasdsad3</P></div>
+38         </div>
+39     </div>
+40 </body>
+41 </html>
