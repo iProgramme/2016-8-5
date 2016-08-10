@@ -159,15 +159,15 @@ footer{margin-bottom: 300px;}
 .open_door{position: absolute;top: 111px;z-index: 1;font-size: 0;width: 710px;background-color: #fff;border-radius: 10px;border: 1px solid #cccccc;left: -1px}
 .con_list:nth-child(4n) .open_door{left: -311px;}
 .open_door ul{border-top: 1px solid #ccc;padding: 10px 5px;cursor: default;}
-.open_door li{display: inline-block;font-size: 16px;margin: 5px;border-radius: 0;width: 60px;height: 60px;text-align: center;border-radius: 10px;cursor: pointer;}
+.open_door li{display: inline-block;font-size: 16px;margin: 5px;border-radius: 0;width: 60px;height: 60px;text-align: center;border-radius: 10px;cursor: pointer;position: relative;}
 .open_door li span{width: 100%;height: 30px;line-height: 30px;}
 .open_door .index_btn4{font-size: 22px;color: #2b2a2a;height: 60px;line-height: 86px;}
 .open_door .index_btn4 span:first-child{height: 60px;line-height: 60px;position: relative;top: -12px}
-.open_door .index_btn4 span:last-child{display: none}
+.open_door .index_btn4 span:nth-child(2){display: none}
 .con_list .open_door p{width: 690px;height: 50px;border-radius: 10px;line-height: 50px;text-align: left;padding: 0 10px;cursor: default;}
 .open_door p span{width: 22px;height: 22px;position: absolute;right: 20px;top: 15px;background: url(../img/index_close.png) no-repeat 0 0;cursor: pointer;}
-
-
+.open_door li li{display: block;line-height: 20px;height: 30px;width: 125px;text-align: left;}
+.open_door li ul{position: absolute;border: 1px solid #ccc;border-radius: 10px;text-align: left;width: 130px;padding-left: 25px;background-color:rgba(256,256,256,0.9);color: #494949;top: 60px}
 
 
 
