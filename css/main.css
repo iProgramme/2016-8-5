@@ -176,9 +176,9 @@ footer{margin-bottom: 300px;}
 .open_door li ul{position: absolute;border: 1px solid #ccc;border-radius: 10px;text-align: left;width: 130px;padding-left: 25px;background-color:rgba(256,256,256,0.9);color: #494949;top: 60px}
 
 .disN{display: none;}
-.map_table{position: absolute;top: 0;background-color: #fff;}
-.map_table tr{text-align: center;font-size: 18px;color: #494949;height: 48px;line-height: 48px;width: 480px}
-.map_table th
-
+.map_table{position: absolute;top: 0;background-color: #fff;height: 1000px}
+.map_table table{color: #494949;width: 480px;height: 35px;line-height: 35px;text-align: center;}
+.map_table thead{font-size: 18px;height: 48px;line-height: 48px}
+.map_table tbody td,.map_table th{border: 1px solid #cccccc}
 
 
