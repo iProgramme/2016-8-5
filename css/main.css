@@ -176,9 +176,39 @@ footer{margin-bottom: 300px;}
 .open_door li ul{position: absolute;border: 1px solid #ccc;border-radius: 10px;text-align: left;width: 130px;padding-left: 25px;background-color:rgba(256,256,256,0.9);color: #494949;top: 60px}
 
 .disN{display: none;}
-.map_table{position: absolute;top: 0;background-color: #fff;height: 1000px}
+.map_table{position: absolute;top: 0;background-color: #fff;height: 1000px;border: 1px solid #ccc;border-radius: 10px}
 .map_table table{color: #494949;width: 480px;height: 35px;line-height: 35px;text-align: center;}
-.map_table thead{font-size: 18px;height: 48px;line-height: 48px}
-.map_table tbody td,.map_table th{border: 1px solid #cccccc}
+.map_table thead{font-size: 18px;height: 48px;line-height: 48px;border-bottom: 1px solid #cccccc}
+.map_table tbody td{font-size:  12px;border-right: 1px solid #cccccc}
+.map_table th{border-right: 1px solid #cccccc;font-size: 16px}
+.map_table tbody tr:nth-child(even){background-color: #eeeeee;}
+.map_table tbody tr:hover{background-color: #f6a554;color: #fff}
+.map_table tbody tr:first-child:hover{background-color: #fff;color: #494949}
+.map_table .open{position: absolute;left: 480px;width: 35px;height: 87px;line-height: 87px; background-color: #f6a554;top: 360px;font-size: 20px;color: #fff;text-align: center;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
