@@ -1125,12 +1125,12 @@ form {
 	border-bottom: 0;
 }
 .form-horizontal .control-label {
-	padding-top: 22px;
+	padding-top: 60px;
 	width: 180px;
 }
 .form-horizontal .controls {
 	margin-left: 200px;
-	padding: 10px 0;
+	padding: 0px 0;
 }
 .form-horizontal input[type=text], .form-horizontal input[type=password], .form-horizontal textarea {
 	background-color: #eeeeee;height: 35px;border-radius: 5px
