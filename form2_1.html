@@ -16,6 +16,14 @@
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link rel="stylesheet" href="jsp/jquery.contextmenu.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+        .contextMenuPlugin{left: 740px!important;top: 10px!important;width: 455px;padding: 20px 0;border: 1px solid #ccc;box-shadow: 0 0 15px #000;border-radius: 10px}
+        .contextMenuPlugin li{width: 355px;height: 50px;line-height: 50px;text-align: center;margin: 10px 50px;border-radius: 10px;background-color: #eeeeee;}
+        .contextMenuPlugin li:hover{background-color: #f89838;}
+        .contextMenuPlugin > li > a:hover{border: 0;background: none;outline:0;}
+        .contextMenuPlugin > li > a:hover span{color: #fff}
+        .contextMenuPlugin > li > a{margin: 0}
+    </style>
 </head>
 
 <body>
@@ -25,51 +33,23 @@
             <div class="form_sty">
                 <ul>
                     <li>
-                        <span>管理箱编号：</span>
+                        <span>表面卡号：</span>
                         <input type="text" name="">
                     </li>
                     <li>
-                        <span>区域：</span>
-                        <select name="" id="">
-                            <option value="">全部</option>
-                            <option value="">全部</option>
-                            <option value="">全部</option>
-                        </select>
+                        <span>用户名：</span>
+                        <input type="text" name="">
                     </li>
+                   
                     <li>
-                        <span>片区：</span>
-                        <select name="" id="">
-                            <option value="">全部</option>
-                            <option value="">全部</option>
-                            <option value="">全部</option>
-                        </select>
-                    </li>
-                    <li>
-                        <span>版本号：</span>
+                        <span>身份证：</span>
                         <input type="text" name="">
                     </li>
                     <li>
-                        <span>停车点名称：</span>
+                        <span>手机号：</span>
                         <input type="text" name="">
                     </li>
-                    <li>
-                        <span>状态：</span>
-                        <select name="" id="">
-                            <option value="">状态一</option>
-                            <option value="">状态2</option>
-                            <option value="">全部</option>
-                            <option value="">等等</option>
-                            <option value="">全部</option>
-                        </select>
-                    </li>
-                    <li>
-                        <span>负责人：</span>
-                        <input type="text" name="">
-                    </li>
-                    <li>
-                        <span>IP地址：</span>
-                        <input type="text" name="">
-                    </li>
+                    
                 </ul>
                 <div class="form_btn">
                     <input type="button" value="查询" class="search">
@@ -80,18 +60,17 @@
         <div class="form10_tab">
             <table>
                 <tr>
-                    <th>序号</th>
-                    <th>管理箱编号</th>
-                    <th>状态</th>
-                    <th>离线/故障/总数</th>
-                    <th>地址</th>
-                    <th>IP地址</th>
-                    <th>版本号</th>
-                    <th>所属停车点</th>
-                    <th>区域</th>
-                    <th>所属片区</th>
-                    <th>最后更新时间</th>
+                    <th>还车流水号</th>
+                    <th>停车点</th>
+                    <th>停车柱号</th>
+                    <th>表面卡号</th>
+                    <th>车牌号</th>
+                    <th>收费金额</th>
+                    <th>还车状态</th>
+                    <th>借车时间</th>
+                    <th>还车时间</th>
                     <th>备注</th>
+                   
                 </tr>
                 <tr>
                     <td>1101</td>
@@ -104,8 +83,7 @@
                     <td>市财政局</td>
                     <td>天元区</td>
                     <td class="green">TN-黄河南</td>
-                    <td>2016-08-12 10:34:35</td>
-                    <td></td>
+                    
                 </tr>
                 <tr>
                     <td>11</td>
@@ -114,22 +92,7 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>11</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    
                     <td></td>
                     <td></td>
                     <td></td>
@@ -141,8 +104,7 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
+                    
                     <td></td>
                     <td></td>
                     <td></td>
@@ -155,8 +117,7 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
+                    
                     <td></td>
                     <td></td>
                     <td></td>
@@ -170,7 +131,19 @@
                     <td></td>
                     <td></td>
                     <td></td>
+                    
                     <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    
                     <td></td>
                     <td></td>
                     <td></td>
@@ -183,22 +156,7 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>11</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    
                     <td></td>
                     <td></td>
                     <td></td>
@@ -213,8 +171,7 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
+                    
                     <td></td>
                     <td></td>
                     <td></td>
@@ -227,7 +184,19 @@
                     <td></td>
                     <td></td>
                     <td></td>
+                    
                     <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    
                     <td></td>
                     <td></td>
                     <td></td>
@@ -247,41 +216,39 @@
             </div>
         </div>
         <!-- 修改的窗口 -->
-        <div class="form10_open disN" >
+        <div class="form10_open form10_open1 disN" >
             <table>
                 <tr>
-                    <th colspan=2>修改信息</th>
+                    <th colspan=2>个人信息</th>
                 </tr>
                 <tr>
-                    <td>编号：</td>
+                    <td>有用户名：</td>
                     <td>
-                        1011
+                        张小凡
                     </td>
                 </tr>
                 <tr>
-                    <td>状态：</td>
+                    <td>表面卡号：</td>
                     <td>
-                        <select>
-                            <option>正常</option>
-                            <option>不正常</option>
-                            <option>不知道</option>
-                        </select>
+                        09824308572498570893475
                     </td>
                 </tr>
                 <tr>
-                    <td>地址：</td>
+                    <td>卡类型：</td>
                     <td>
-                        <input type="text"  value="盈泽演示">
+                        管理卡
                     </td>
                 </tr>
                 <tr>
-                    <td>所属停车点：</td>
+                    <td>用户状态：</td>
                     <td>
-                        <select>
-                            <option>羊城</option>
-                            <option>帝都</option>
-                            <option>龙城</option>
-                        </select>
+                        正常
+                    </td>
+                </tr>
+                <tr>
+                    <td>证件号：</td>
+                    <td>
+                        11008723492734083
                     </td>
                 </tr>
                 <tr>
@@ -306,24 +273,52 @@
         $('.form10_tab tr').contextPopup({
             // title: 'My Popup Menu',
             items: [{
-                label: '添加',
-                icon: 'img/right_add.png',
-                action: function() {
-                    alert('clicked 1')
-                }
-            }, {
-                label: '删除',
-                icon: 'img/right_del.png',
-                action: function() {
-                    alert('clicked 2')
-                }
-            }, {
-                label: '修改',
-                icon: 'img/right_gai.png',
+                label: '查看个人信息',
+                // icon: 'img/right_add.png',
                 action: function() {
                     $(".form10_open").show()
                 }
-            }, ]
+            }, {
+                label: '修改个人信息',
+                // icon: 'img/right_del.png',
+                action: function() {
+                }
+            }, {
+                label: '修改金额',
+                // icon: 'img/right_gai.png',
+                action: function() {
+                }
+            }, {
+                label: '个人记录查询',
+                // icon: 'img/right_gai.png',
+                action: function() {
+                }
+            }, {
+                label: '信息导出',
+                // icon: 'img/right_gai.png',
+                action: function() {
+                }
+            }, {
+                label: '密码修改',
+                // icon: 'img/right_gai.png',
+                action: function() {
+                }
+            }, {
+                label: '挂失解挂',
+                // icon: 'img/right_gai.png',
+                action: function() {
+                }
+            }, {
+                label: '销户',
+                // icon: 'img/right_gai.png',
+                action: function() {
+                }
+            }, {
+                label: '删除',
+                // icon: 'img/right_gai.png',
+                action: function() {
+                }
+            } ]
         });
     });
     </script>

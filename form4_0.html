@@ -16,20 +16,62 @@
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link rel="stylesheet" href="jsp/jquery.contextmenu.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+        .form_33{margin-top: 7px;}
+    </style>
 </head>
 
 <body>
     <!--close-left-menu-stats-sidebar-->
     <div id="form33_sty">
+        <div class="form4_0_sty">
+            <ul class="form40_tabs">
+                <li>
+                    <span class="form40_title">营收记录</span>
+                    
+                </li>
+                <li>
+                    <span class="form40_title">POS机记录</span>
+                    
+                </li>
+                <li>
+                    <span class="form40_title">业务记录</span>
+                    
+                </li>
+            </ul>
+            <div class="tabs_sui">
+                <ul class="tabs_sui4 disN">
+                    <li>租车记录111</li>
+                    <li>还车记录111</li>
+                    <li>销户记录111</li>
+                    <li>开卡记录111</li>
+                    <li>调度记录111</li>
+                </ul>
+                <ul class="tabs_sui4 disN">
+                    <li>租车记录222</li>
+                    <li>还车记录222</li>
+                    <li>销户记录222</li>
+                    <li>开卡记录222</li>
+                    <li>调度记录222</li>
+                </ul>
+                <ul class="tabs_sui4 disN">
+                    <li>租车记录333</li>
+                    <li>还车记录333</li>
+                    <li>销户记录333</li>
+                    <li>开卡记录333</li>
+                    <li>调度记录333</li>
+                </ul>
+            </div>
+        </div>
         <div class="form_33">
             <div class="form_sty">
                 <ul>
                     <li>
-                        <span>管理箱编号：</span>
+                        <span>还车停车柱号：</span>
                         <input type="text" name="">
                     </li>
                     <li>
-                        <span>区域：</span>
+                        <span>还车状态：</span>
                         <select name="" id="">
                             <option value="">全部</option>
                             <option value="">全部</option>
@@ -37,38 +79,59 @@
                         </select>
                     </li>
                     <li>
-                        <span>片区：</span>
+                        <span>车牌号：</span>
+                        <input type="text" name="">
+                        
+                    </li>
+                    <li>
+                        <span>版收费金额：</span>
                         <select name="" id="">
-                            <option value="">全部</option>
-                            <option value="">全部</option>
-                            <option value="">全部</option>
+                            <option value="">一百万</option>
+                            <option value="">两百万</option>
+                            <option value="">五百万</option>
+                            <option value="">等等</option>
+                            <option value="">全部资产</option>
                         </select>
                     </li>
                     <li>
-                        <span>版本号：</span>
+                        <span>取车停车柱号：</span>
                         <input type="text" name="">
                     </li>
                     <li>
-                        <span>停车点名称：</span>
+                        <span>表面卡号：</span>
                         <input type="text" name="">
                     </li>
                     <li>
-                        <span>状态：</span>
+                        <span>停车点：</span>
+                        <input type="text" name="">
+                    </li>
+                    <li>
+                        <span>卡类型：</span>
                         <select name="" id="">
-                            <option value="">状态一</option>
-                            <option value="">状态2</option>
-                            <option value="">全部</option>
+                            <option value="">魔法卡</option>
+                            <option value="">陷阱卡</option>
+                            <option value="">史诗卡</option>
                             <option value="">等等</option>
                             <option value="">全部</option>
                         </select>
                     </li>
                     <li>
-                        <span>负责人：</span>
-                        <input type="text" name="">
+                        <span>时间范围：</span>
+                        <input type="date" name=""> &nbsp;：
                     </li>
                     <li>
-                        <span>IP地址：</span>
-                        <input type="text" name="">
+                        
+                        <input type="date" name="">
+                    </li>
+                    <li>
+                        <span>卡类别：</span>
+                        <select name="" id="">
+                            <option value="">魔法卡</option>
+                            <option value="">陷阱卡</option>
+                            <option value="">史诗卡</option>
+                            <option value="">等等</option>
+                            <option value="">全部</option>
+                        </select>
                     </li>
                 </ul>
                 <div class="form_btn">
@@ -247,7 +310,7 @@
             </div>
         </div>
         <!-- 修改的窗口 -->
-        <div class="form10_open disN" >
+        <div class="form10_open disN">
             <table>
                 <tr>
                     <th colspan=2>修改信息</th>
@@ -271,7 +334,7 @@
                 <tr>
                     <td>地址：</td>
                     <td>
-                        <input type="text"  value="盈泽演示">
+                        <input type="text" value="盈泽演示">
                     </td>
                 </tr>
                 <tr>
@@ -329,10 +392,15 @@
     </script>
     <script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
     <script>
-       
-        $(".form10_open .cancel").click(function () {
-            $(".form10_open").hide()
-        })
+    $(".form10_open .cancel").click(function() {
+        $(".form10_open").hide()
+    })
+    $(".form40_title").hover(function () {
+        var num1=$(this).parents('li').index();
+        $(".tabs_sui4").eq(num1).show();
+    },function () {
+        $(".tabs_sui4").hide();
+    })
     </script>
 </body>
 
