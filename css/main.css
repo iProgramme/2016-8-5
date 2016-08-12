@@ -209,8 +209,8 @@ footer{margin-bottom: 300px;}
 .pages li{display: inline-block;margin: 20px 5px}
 .pages input{width: 20px;height: 11px;margin: -1px 5px 0}
 .pages li a{color: #fff;background-color: #f89838;}
-
-
+/*修改弹出窗*/
+.form10_open{position: fixed;width: 560px;top: 100px;left: 680px}
 
 
 

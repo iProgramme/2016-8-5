@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/matrix-media.css" />
     <link rel="stylesheet" href="css/bootstrap-wysihtml5.css" />
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="jsp/jquery.contextmenu.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
 </head>
 
@@ -244,45 +245,73 @@
                 </ul>
             </div>
         </div>
+        <div class="form10_open">
+            <table>
+                <tr>
+                    <th colspan=2>修改信息</th>
+                </tr>
+                <tr>
+                    <td>编号：</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>状态：</td>
+                    <td>
+                        <select>
+                            <option>正常</option>
+                            <option>不正常</option>
+                            <option>不知道</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>地址：</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>所属停车点</td>
+                    <td>
+                        <select>
+                            <option>羊城</option>
+                            <option>帝都</option>
+                            <option>龙城</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                </tr>
+            </table>
+            <div class="form10_btn">
+                <input type="button" name="" value="确定">
+                <input type="button" name="" value="取消">
+            </div>
+        </div>
     </div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.ui.custom.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-colorpicker.js"></script>
-    <script src="js/bootstrap-datepicker.js"></script>
-    <script src="js/jquery.toggle.buttons.html"></script>
-    <script src="js/masked.js"></script>
-    <script src="js/jquery.uniform.js"></script>
-    <script src="js/matrix.js"></script>
-    <script src="js/wysihtml5-0.3.0.js"></script>
-    <script src="js/jquery.peity.min.js"></script>
-    <script src="js/jquery.dataTables.min.js"></script>
-    <script src="js/matrix.tables.js"></script>
-    <script src="js/matrix.form_common.js"></script>
-    <script src="js/bootstrap-wysihtml5.js"></script>
-    <script>
-    $('.textarea_editor').wysihtml5();
-    </script>
-    <script>
-    // 鼠标右键js
+    
+  
+
+
+    <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+    <script src="jsp/jquery.contextmenu.js"></script>
+     <script>
       $(function() {
         $('tr').contextPopup({
-          title: 'My Popup Menu',
+          // title: 'My Popup Menu',
           items: [
-            {label:'Some Item',     icon:'icons/shopping-basket.png',             action:function() { alert('clicked 1') } },
-            {label:'Another Thing', icon:'icons/receipt-text.png',                action:function() { alert('clicked 2') } },
-            {label:'Blah Blah',     icon:'icons/book-open-list.png',              action:function() { alert('clicked 3') } },
-            null, // divider
-            {label:'Sheep',         icon:'icons/application-monitor.png',         action:function() { alert('clicked 4') } },
-            {label:'Cheese',        icon:'icons/bin-metal.png',                   action:function() { alert('clicked 5') } },
-            {label:'Bacon',         icon:'icons/magnifier-zoom-actual-equal.png', action:function() { alert('clicked 6') } },
-            null, // divider
-            {label:'Onwards',       icon:'icons/application-table.png',           action:function() { alert('clicked 7') } },
-            {label:'Flutters',      icon:'icons/cassette.png',                    action:function() { alert('clicked 8') } }
+            {label:'添加',icon:'img/right_add.png',action:function() { alert('clicked 1') } },
+            {label:'删除', icon:'img/right_del.png',  action:function() { alert('clicked 2') } },
+            {label:'修改',     icon:'img/right_gai.png',  action:function() {
+                $("form10_open").show()
+            } },
           ]
         });
       });
     </script>
+    <script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+ 
+  
 </body>
 
 </html>
