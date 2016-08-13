@@ -85,14 +85,14 @@ header{width: 100%;height: 106px;line-height: 106px;background-color: #fff;}
 .square .square2{background: url(../img/square2.png) no-repeat 0 2px;}
 .tabs .f21{font-size: 12px}
 .index{background-color: #29313e!important;color: #cfd0d7!important}
-.container_y{width: 917px;height: 334px;background-color: #fff;border-radius: 10px;display: inline-block;position: relative;line-height: 100px;position: relative;}
+.container_y{width: 917px;height: 334px;background-color: #fff;border-radius: 10px;display: inline-block;line-height: 100px;position: relative;border: 1px solid #cccccc}
 .steps li{display: inline-block;width: 25%;position: relative;color: #ccc}
 .steps li span{position: absolute;height: 50px;top: 88px;line-height: 50px;width: 100%;left: 0;background: url(../img/steps.png) no-repeat 0 -66px;font-size: 24px;color: #000}
-.container_y1 input{width: 166px;height: 52px;position: absolute;right: 40px;bottom: 50px;background-color: #f6a554;color: #fff;font-size: 24px;border-radius: 8px}
+.container_y22 input{width: 166px;height: 52px;position: absolute;right: 40px;bottom: 50px;background-color: #f6a554;color: #fff;font-size: 24px;border-radius: 8px}
 .steps p{margin-top: 38px;height: 40px;font-size: 20px;}
 .step_active p{color: #f6a554}
 .steps .step_active span{color: #fff;background: url(../img/steps.png) no-repeat 0 4px}
-.container_y1{top: -60px;}
+.container_y22{top: -60px;}
 .container_y2{top: 0px;}
 .container_y2 p{line-height: 30px;position: relative;top: 70px;font-size: 18px}
 .container_y2 input{width: 166px;height: 52px;background-color: #73c1b1;color: #fff;right: -260px;bottom: -147px;position: relative;border-radius: 8px;font-size: 24px}
@@ -228,7 +228,11 @@ footer{margin-bottom: 300px;}
 .tabs_sui4{position: absolute;padding: 25px 0;width: 1849px; background-color: #fff;border: 1px solid #cccccc}
 .tabs_sui4 li{height: 60px;line-height: 60px;padding: 0 25px;border-right: 1px solid #cccccc;font-size: 16px;display: inline-block;}
 .tabs_sui{position: relative;z-index: 10;top: -1px}
+<<<<<<< Updated upstream
 
+=======
+.form20_content{padding-top: 100px!important;}
+>>>>>>> Stashed changes
 
 
 
