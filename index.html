@@ -173,16 +173,14 @@
     <script type="text/javascript" src="jsp/contabs.min.js"></script>
     <script src="jsp/pace.min.js"></script>
     <script type="text/javascript">
-    $("#side-menu li").click(function() {
+    $("#side-menu li").hover(function() {
             $(this).addClass('all_active');
 
         if ($(this).children('ul').is(':hidden')) {　　 //如果是隐藏的则显示元素，否则隐藏
             $("#side-menu li ul").hide();
-            $("#side-menu li").removeClass('all_active');
             $(this).addClass('all_active');
             $(this).children('ul').show();　
         } else {
-            $("#side-menu li").removeClass('all_active');
             $(this).children('ul').hide();
 
         }

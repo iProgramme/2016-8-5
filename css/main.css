@@ -15,12 +15,12 @@ a:focus,area{outline:none;}
 .clear,.cf{clear:both;zoom:1;overflow:hidden;}
 .ml10{margin-left: 10px;}
 /*common-header*/
-header{width: 100%;height: 106px;line-height: 106px;background-color: #fff;}
-.header_logo{background: url(../img/bg_img.png) no-repeat 31px 8px; font-size: 48px;padding-left: 134px;}
-.header_right a{line-height: 155px;background: url(../img/bg_img.png) no-repeat;font-size: 12px;margin: 0 10px;width: 50px;text-align: center;}
-.header_right .header_btn1{background-position: -3px -100px;}
-.header_right .header_btn2{background-position: -94px -100px;}
-.header_right .header_btn3{background-position: -193px -100px;}
+header{width: 100%;height: 60px;line-height: 60px;background-color: #fff;}
+.header_logo{background: url(../img/bg_img.png) no-repeat 31px 8px; font-size: 28px;padding-left: 90px;}
+.header_right a{line-height: 100px;background: url(../img/bg_img.png) no-repeat;font-size: 12px;margin: 0 10px;width: 50px;text-align: center;}
+.header_right .header_btn1{background-position: 7px -59px;}
+.header_right .header_btn2{background-position: 7px -128px;}
+.header_right .header_btn3{background-position: 7px -192px;}
 .header_right{position: absolute;right: 65px}
 .tabs_all,.index{border: 0px solid #8c8d91;border-radius: 5px;padding: 4px 10px;margin: 10px 10px 0 10px;width: 160px;position: relative;background-color: #cccccc}
 .tabs_all span,.index span{color: #9d9d9d;background: url(../img/close.png) no-repeat 5px 6px;position: absolute;right: 10px}
@@ -85,7 +85,7 @@ header{width: 100%;height: 106px;line-height: 106px;background-color: #fff;}
 .square .square2{background: url(../img/square2.png) no-repeat 0 2px;}
 .tabs .f21{font-size: 12px}
 .index{background-color: #29313e!important;color: #cfd0d7!important}
-.container_y{width: 917px;height: 334px;background-color: #fff;border-radius: 10px;line-height: 100px;position: relative;border: 1px solid #cccccc;margin: 0 auto}
+.container_y{width: 917px;height: 334px;background-color: #fff;border-radius: 10px;line-height: 100px;position: relative;border: 1px solid #cccccc;margin: 40px auto 0}
 .steps li{display: inline-block;width: 25%;position: relative;color: #ccc}
 .steps li span{position: absolute;height: 50px;top: 88px;line-height: 50px;width: 100%;left: 0;background: url(../img/steps.png) no-repeat 0 -66px;font-size: 24px;color: #000}
 .container_y22 input{width: 166px;height: 52px;position: absolute;right: 40px;bottom: 50px;background-color: #f6a554;color: #fff;font-size: 24px;border-radius: 8px}
@@ -143,11 +143,12 @@ footer{margin-bottom: 300px;}
 .sumopen .fa{position: absolute;left: 0;width: 90px;height: 90px}
 .sumopen .nav-label{padding-top: 56px;padding-bottom: 6px;}
 #side-menu{width: 1840px;margin-left: 30px}
-.sumopen a{font-size: 20px;background-color: #fff;color: #878889;border-radius: 10px}
-.sumopen:first-child a{border-radius: 10px;background-color: #29313e;color: #fff}
-.nav .all_active a{background-color: #29313e;color: #fff;border-bottom-left-radius: 0px;border-bottom-right-radius: 0px;}
-.collapse li{width: 280px;font-size: 18px;height: 30px;line-height: 30px;}
-.collapse li a:hover{    background: url(../img/dot.png) no-repeat 14px 11px #1b1f28;border-top-right-radius: 10px}
+.nav .sumopen a{font-size: 20px;/*background-color: #fff;*/color: #878889;border-radius: 10px}
+.sumopen:hover a{border-radius: 10px;background-color: #29313e;color: #fff}
+.nav .sumopen:hover a{background-color: #29313e;color: #fff;border-bottom-left-radius: 0px;border-bottom-right-radius: 0px;}
+.nav .sumopen:first-child a{border-radius: 10px}
+.collapse li{width: 280px;font-size: 18px;height: 55px;line-height: 55px;}
+.collapse li a:hover{    background: url(../img/dot.png) no-repeat 14px 22px #1b1f28;border-top-right-radius: 10px}
 .collapse{border-radius: 10px;border-top-left-radius: 0;padding: 10px 0}
 .tab-nav-arrow {display: block;text-decoration: none;overflow: hidden;text-indent: -99px;background: url(../img/header_tab.png) no-repeat 10px -26px;}
 .arrow-left {background-position: 0 7px;}
@@ -173,7 +174,7 @@ footer{margin-bottom: 300px;}
 .open_door .index_btn4 span:nth-child(2){display: none}
 .con_list .open_door p{width: 690px;height: 50px;border-radius: 10px;line-height: 50px;text-align: left;padding: 0 10px;cursor: default;}
 .open_door p span{width: 22px;height: 22px;position: absolute;right: 20px;top: 15px;background: url(../img/index_close.png) no-repeat 0 0;cursor: pointer;}
-.open_door li li{display: block;line-height: 20px;height: 30px;width: 125px;text-align: left;border: 0}
+.open_door li li{display: block;line-height: 20px;height: 30px;width: 125px;text-align: left;border: 0!important}
 .open_door li ul{position: absolute;border: 1px solid #ccc;border-radius: 10px;text-align: left;width: 130px;padding-left: 25px;background-color:rgba(256,256,256,0.9);color: #494949;top: 60px}
 
 .disN{display: none;}
@@ -191,17 +192,17 @@ footer{margin-bottom: 300px;}
 .form_33{margin: 30px 20px 20px;}
 .form_sty ul{width: 1500px}
 .form_sty li{display: inline-block;max-width: 380px;margin: 10px 0;margin-left: 40px;font-size: 18px}
-.form_sty li span{margin-right: 0px;width: 110px}
+.form_sty li span{margin-right: 0px;width: 127px}
 .form_sty li select{width: 200px;font-size: 18px;margin-bottom: 0;}
 .form_sty li input{width: 185px}
 .form_sty .form_btn{position: absolute;right: 10px;bottom: 45px}
 .form_btn input{width: 120px;height: 45px;line-height: 45px;border-radius: 5px;color: #fff;margin: 0 20px;font-size: 18px}
 .form_btn .search{background-color: #f89838;}
 .form_btn .reset{background-color: #57c2b4;}
-.J_mainContent{border: 2px solid #cccccc;background-color: #f5f5f5;}
+.J_mainContent{border: 2px solid #cccccc;background-color: #f5f5f5;position: relative;z-index: 1;top: 40px}
 .form33_ifr{margin: 30px 20px 20px;border: 2px solid #cccccc;}
 .form10_tab{margin-left: 20px;}
-.form10_tab table{width: 1856px;text-align: center;font-size: 16px;color: #494949}
+.form10_tab table{width: 1856px;text-align: center;font-size: 16px;color: #494949;border-bottom: 4px solid #f89838;}
 .form10_tab table th{height: 65px;line-height: 65px;color: #fff;font-size: 18px;border-bottom: 4px solid #f89838;background-color: #57c2b4;}
 .form10_tab .green{color: #f89838}
 .form10_tab tr:nth-child(odd){background-color: #f5f5f5;}
@@ -223,19 +224,29 @@ footer{margin-bottom: 300px;}
 .form10_open1 input{width: 350px}
 .form10_open1 th{font-size: 26px;}
 .form4_0_sty{margin-left: 20px;height: 55px;padding-top: 25px}
-.form4_0_sty li{display: inline-block;}
+.form40_tabs li{display: inline-block;}
+.form20_content .form40_tabs{top: -60px;text-align: left;position: relative;border-bottom: 1px solid #cccccc;width: 1860px;padding-left: 20px;}
+.form20_content .form40_tabs span{border-bottom: 0}
 .form40_title{padding:20px 45px;border-top-right-radius: 10px;border-top-left-radius: 10px;background-color: #eeeeee;color: #494949;border: 1px solid #cccccc;margin-right: 10px;font-size: 18px;}
 .form40_title:hover{background-color: #29313e;color: #fff;cursor: default;}
 .tabs_sui4{position: absolute;padding: 25px 0;width: 1849px; background-color: #fff;border: 1px solid #cccccc}
 .tabs_sui4 li{height: 60px;line-height: 60px;padding: 0 25px;border-right: 1px solid #cccccc;font-size: 16px;display: inline-block;}
 .tabs_sui{position: relative;z-index: 10;top: -1px}
 .form20_content{padding-top: 100px!important;background-color: #f5f5f5;}
+.form20_content .form40_title{padding: 20px 55px}
 .container_y1{height: 470px;line-height: 30px;padding: 30px 0}
 .container_y1 img{margin-bottom: 25px;}
 .container_y1 p{font-size: 24px;color: #232121;margin-top: 20px;}
 .container_y1 input{width: 120px;height: 45px;background-color: #f7a654;color: #fff;margin-top: 50px;font-size: 20px;border-radius: 8px}
 .page-tabs a{width: 180px}
 .open_door .active_border{border: 3px solid #29313e;}
+.form10_tab tr th:first-child{border-top-left-radius: 10px}
+.form10_tab tr th:last-child{border-top-right-radius: 10px}
+
+
+
+
+
 
 
 

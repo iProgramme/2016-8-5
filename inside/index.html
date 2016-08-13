@@ -16,7 +16,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
 </head>
 
-<body>
+<body style="padding-bottom: 530px">
     <!--breadcrumbs-->
     <!--End-breadcrumbs-->
     <div class="index_header index_header1">
@@ -591,6 +591,9 @@
 
         }
             event.stopPropagation();
+    });
+    $(".open_door li li").click(function() {
+        $(this).parents('li').css('z-index','2')
     });
     $(".open_door p span").click(function () {
         $(".open_door").hide();
