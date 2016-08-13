@@ -580,7 +580,9 @@
     // 点击之后出现三级弹窗
     $(".open_door li").click(function () {
         $(".open_door li").css("z-index","1");
-        $(this).css("z-index","2")
+        $(this).css("z-index","2");
+        $(".open_door li").removeClass('active_border');
+        $(this).addClass('active_border');
          if ($(this).children('ul').is(':hidden')) {　　 //如果是隐藏的则显示元素，否则隐藏
         $(".open_door li").children('ul').hide();
             $(this).children('ul').show();
