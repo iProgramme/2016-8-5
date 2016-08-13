@@ -18,6 +18,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
     <style type="text/css">
         .form_33{margin-top: 7px;}
+        body{background-color: #f5f5f5;}
     </style>
 </head>
 
@@ -56,14 +57,14 @@
                 </ul>
                 <ul class="tabs_sui4 disN">
                     <li>租车记录333</li>
-                    <li>还车记录333</li>
+                    <li class="active">还车记录</li>
                     <li>销户记录333</li>
                     <li>开卡记录333</li>
                     <li>调度记录333</li>
                 </ul>
             </div>
         </div>
-        <div class="form_33">
+        <div class="form_33 disN">
             <div class="form_sty">
                 <ul>
                     <li>
@@ -140,7 +141,7 @@
                 </div>
             </div>
         </div>
-        <div class="form10_tab">
+        <div class="form10_tab disN">
             <table>
                 <tr>
                     <th>序号</th>
@@ -395,13 +396,15 @@
     $(".form10_open .cancel").click(function() {
         $(".form10_open").hide()
     })
-    $(".form40_title").hover(function () {
+    $(".form40_title,.tabs_sui4").hover(function () {
         var num1=$(this).parents('li').index();
         $(".tabs_sui4").eq(num1).show();
     },function () {
         $(".tabs_sui4").hide();
     })
+    $(".active").click(function () {
+        $(".form10_tab,.form_33").show()
+    })
     </script>
 </body>
-
 </html>
