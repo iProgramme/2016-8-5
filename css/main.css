@@ -15,7 +15,7 @@ a:focus,area{outline:none;}
 .clear,.cf{clear:both;zoom:1;overflow:hidden;}
 .ml10{margin-left: 10px;}
 /*common-header*/
-header{width: 100%;height: 60px;line-height: 60px;background-color: #fff;}
+header{width: 100%;height: 60px;line-height: 60px;background-color: #e5e5e5;border-bottom: 1px solid #9fa4af}
 .header_logo{background: url(../img/bg_img.png) no-repeat 31px 8px; font-size: 28px;padding-left: 90px;}
 .header_right a{line-height: 100px;background: url(../img/bg_img.png) no-repeat;font-size: 12px;margin: 0 10px;width: 50px;text-align: center;}
 .header_right .header_btn1{background-position: 7px -59px;}
@@ -152,7 +152,7 @@ footer{margin-bottom: 300px;}
 .sumopen .fa{position: absolute;left: 0;width: 90px;height: 90px}
 .sumopen .nav-label{padding-top: 56px;padding-bottom: 6px;}
 #side-menu{width: 1840px;margin-left: 30px}
-.nav .sumopen a{font-size: 20px;/*background-color: #fff;*/color: #878889;border-radius: 10px}
+.nav .sumopen a{font-size: 20px;background-color: #fff;color: #878889;border-radius: 10px}
 .sumopen:hover a{border-radius: 10px;background-color: #29313e;color: #fff}
 .nav .sumopen:hover a{background-color: #29313e;color: #fff;border-bottom-left-radius: 0px;border-bottom-right-radius: 0px;}
 .nav .sumopen:first-child a{border-radius: 10px}
