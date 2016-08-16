@@ -145,7 +145,7 @@ footer{margin-bottom: 300px;}
 .five_btn2 .index_btn5{background-position: 9px -261px;}
 .five_btn2 .index_btn6{background-position: 13px -339px;}
 .five_text{display: inline-block;width: calc(100% - 635px);text-align: right;}
-.five_text input,.five_text select{width: 17%;height: 30px;border-radius: 5px;margin: 0 3% 0 0;padding: 0;}
+.five_text input,.five_text select{width: 16%;height: 30px;border-radius: 5px;margin: 0 3% 0 0;padding: 0;}
 .five_text select{height: 32px}
 .five_text span{margin-right: 10px;}
 #tab{margin-top: 113px;margin-left: -26px;width: 1902px}
@@ -258,7 +258,7 @@ footer{margin-bottom: 300px;}
 label, input, button, select, textarea{font-family: "Microsoft Yahei"}
 body.full-height-layout #page-wrapper{height: calc(100% - 140px)}
 .over_auto{width: 100%;overflow: auto;}
-
+input[type="text"]{padding: 0 6px;height: 28px;line-height: 28px;}
 
 
 
