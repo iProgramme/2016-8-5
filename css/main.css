@@ -40,7 +40,7 @@ header{width: 100%;height: 60px;line-height: 60px;background-color: #e5e5e5;bord
 .tit_per{position: absolute;top: 125px;right: 10px;padding: 1px 5px;background-color: rgba(164, 124, 124, 0.47);border-radius: 3px}
 .tit_spac{position: absolute;top: 110px;left: 5%}
 .index_tit{position: relative;text-align: left;height: 171px}
-#content{overflow: auto;}
+#content{overflow: hidden;}
 .index_someth{text-align: center;border-bottom: 1px solid #ebebeb}
 .index_someth p{font-size: 22px;padding: 5px 0}
 .index_someth span{font-size: 6px}
@@ -131,7 +131,7 @@ header{width: 100%;height: 60px;line-height: 60px;background-color: #e5e5e5;bord
 .tablebot .page_pre,.tablebot .page_next{background: url(../img/pre_next.png) no-repeat  0 0;width: 20px;}
 .tablebot .page_next{background-position: 7px -31px;}
 footer{margin-bottom: 300px;}
-.index_header{height: 70px;padding: 0 10px;line-height: 70px;border-bottom: 3px solid #9ea5b1;width: 1880px}
+.index_header{height: 70px;padding: 0 10px;line-height: 70px;border-bottom: 3px solid #9ea5b1;width: calc(100% - 20px)}
 .index_select{display: inline-block;width: 170px;text-align: center;}
 .index_select input{position: relative;top: -5px;right: 10px}
 .index_select span{margin-right: 25px;font-size: 16px}
@@ -144,8 +144,9 @@ footer{margin-bottom: 300px;}
 .five_btn2 .index_btn4{background-position: 9px -188px;}
 .five_btn2 .index_btn5{background-position: 9px -261px;}
 .five_btn2 .index_btn6{background-position: 13px -339px;}
-.five_text{display: inline-block;width: 1220px;text-align: right;}
-.five_text input,.five_text select{width: 162px;height: 30px;border-radius: 5px;margin: 0 35px 0 0;padding: 0;}
+.five_text{display: inline-block;width: calc(100% - 635px);text-align: right;}
+.five_text input,.five_text select{width: 17%;height: 30px;border-radius: 5px;margin: 0 3% 0 0;padding: 0;}
+.five_text select{height: 32px}
 .five_text span{margin-right: 10px;}
 #tab{margin-top: 113px;margin-left: -26px;width: 1902px}
 .sumopen{width: 90px;height: 90px;margin-top: 10px;text-align: center;margin-right: 26px;}
@@ -188,30 +189,30 @@ footer{margin-bottom: 300px;}
 .open_door li ul{position: absolute;border: 1px solid #ccc;border-radius: 10px;text-align: left;width: 130px;padding-left: 25px;background-color:rgba(256,256,256,0.9);color: #494949;top: 60px}
 
 .disN{display: none;}
-.map_table{position: absolute;top: 0;background-color: #fff;height: 1000px;border: 1px solid #ccc;border-radius: 10px}
-.map_table table{color: #494949;width: 480px;height: 35px;line-height: 35px;text-align: center;}
+.map_table{position: absolute;top: 0;background-color: #fff;height: 100%;border: 1px solid #ccc;border-radius: 10px;overflow: auto;}
+.map_table table{color: #494949;width: 480px;height: 100%;line-height: 35px;text-align: center;overflow: auto;}
 .map_table thead{font-size: 18px;height: 48px;line-height: 48px;border-bottom: 1px solid #cccccc}
 .map_table tbody td{font-size:  12px;border-right: 1px solid #cccccc}
 .map_table th{border-right: 1px solid #cccccc;font-size: 16px}
 .map_table tbody tr:nth-child(even){background-color: #eeeeee;}
 .map_table tbody tr:hover{background-color: #f6a554;color: #fff}
 .map_table tbody tr:first-child:hover{background-color: #fff;color: #494949}
-.map_table .open{position: absolute;left: 480px;width: 35px;height: 87px;line-height: 87px; background-color: #f6a554;top: 360px;font-size: 20px;color: #fff;text-align: center;}
-#form33_sty{background-color: #f5f5f5;margin-top: -30px;padding-top: 30px;padding-bottom: 120px;}
+.map_table .open{position: fixed;left: 480px;width: 35px;height: 87px;line-height: 87px; background-color: #f6a554;top: calc(50% - 44px);font-size: 20px;color: #fff;text-align: center;}
+#form33_sty{background-color: #f5f5f5;margin-top: -30px;padding-top: 30px;padding-bottom: 20px;}
 .form_sty{padding: 45px 0;background-color: #fff;position: relative;border-radius: 5px;}
 .form_33{margin: 30px 20px 20px;}
-.form_sty ul{width: 1500px}
+.form_sty ul{width: calc(100% - 330px)}
 .form_sty li{display: inline-block;max-width: 380px;margin: 10px 0;margin-left: 40px;font-size: 18px}
 .form_sty li span{margin-right: 0px;width: 127px}
 .form_sty li select{width: 200px;font-size: 18px;margin-bottom: 0;}
 .form_sty li input{width: 185px}
-.form_sty .form_btn{position: absolute;right: 10px;bottom: 45px}
+.form_sty .form_btn{position: absolute;right: 10px;bottom: 45px;width: 330px}
 .form_btn input{width: 120px;height: 45px;line-height: 45px;border-radius: 5px;color: #fff;margin: 0 20px;font-size: 18px}
 .form_btn .search{background-color: #f89838;}
 .form_btn .reset{background-color: #57c2b4;}
 .J_mainContent{border: 2px solid #cccccc;background-color: #f5f5f5;position: relative;z-index: 1;top: 40px}
 .form33_ifr{margin: 30px 0px 20px;border: 2px solid #cccccc;}
-.form10_tab{margin-left: 20px;}
+.form10_tab{margin:0 20px;overflow: auto;}
 .form10_tab table{width: 1856px;text-align: center;font-size: 16px;color: #494949;border-bottom: 4px solid #f89838;}
 .form10_tab table th{height: 65px;line-height: 65px;color: #fff;font-size: 18px;border-bottom: 4px solid #f89838;background-color: #57c2b4;}
 .form10_tab .green{color: #f89838}
@@ -219,23 +220,24 @@ footer{margin-bottom: 300px;}
 .form10_tab tr:nth-child(even){background-color: #fff;}
 .form10_tab td{height: 55px;line-height: 55px;border-right: 2px solid #ebebeb}
 .form10_tab td:last-child{border: 0}
-.pages{width: 100%;text-align: right;}
+.pages{width: calc(100% - 20px);text-align: right;}
 .pages li{display: inline-block;margin: 20px 5px}
 .pages input{width: 20px;height: 11px;margin: -1px 5px 0}
 .pages li a{color: #fff;background-color: #f89838;}
 /*修改弹出窗*/
-.form10_open{position: fixed;width: 560px;top: 20px;left: 680px;background-color: #fff;border-radius:10px;border: 1px solid #ccc;box-shadow: 0 0 15px #000;}
+.form10_open{position: fixed;width: 560px;top: 20px;left: calc(50% - 281px);background-color: #fff;border-radius:10px;border: 1px solid #ccc;box-shadow: 0 0 15px #000;}
 .form10_open td{padding-top: 15px;font-size: 16px;color: #494949}
 .form10_open td:first-child{width: 170px;text-align: right;margin-right: 10px;font-size: 16px;color: #494949}
 .form10_open th{height: 125px;line-height: 125px;font-size: 18px;color: #fff;background-color: #57c2b4;width: 560px;border-top-right-radius: 10px;border-top-left-radius: 10px;margin-bottom: 10px;}
 .form10_btn input{width: 430px;height: 50px;line-height: 50px;text-align: center;font-size: 16px;color: #494949;border-radius: 10px;margin: 5px 65px 10px;background-color: #fff;}
 .form10_btn input:hover{background-color: #f89838;color: #fff}
-.form10_open1{width: 480px;left: 725px}
+.form10_open1{width: 480px;left: calc(50% - 241px)}
 .form10_open1 input{width: 350px}
 .form10_open1 th{font-size: 26px;}
 .form4_0_sty{margin-left: 20px;height: 55px;padding-top: 25px}
 .form40_tabs li{display: inline-block;}
-.form20_content .form40_tabs{top: -60px;text-align: left;position: relative;border-bottom: 1px solid #cccccc;width: 1860px;padding-left: 20px;}
+.form20_content .form40_tabs{top: -60px;text-align: left;position: relative;border-bottom: 1px solid #cccccc;padding-left: 20px;}
+.form20_content .form40_tabs ul{width: 1860px}
 .form20_content .form40_tabs span{border-bottom: 0}
 .form40_title{padding:20px 45px;border-top-right-radius: 10px;border-top-left-radius: 10px;background-color: #eeeeee;color: #494949;border: 1px solid #cccccc;margin-right: 10px;font-size: 18px;}
 .form40_title:hover,.form20_active{background-color: #29313e;color: #fff;cursor: default;}
@@ -255,7 +257,7 @@ footer{margin-bottom: 300px;}
 .tabs_sui4 li:hover{color: #f89838;cursor: pointer;}
 label, input, button, select, textarea{font-family: "Microsoft Yahei"}
 body.full-height-layout #page-wrapper{height: calc(100% - 140px)}
-
+.over_auto{width: 100%;overflow: auto;}
 
 
 
