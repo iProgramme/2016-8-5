@@ -153,6 +153,7 @@ footer{margin-bottom: 300px;}
 .sumopen .nav-label{padding-top: 56px;padding-bottom: 6px;}
 #side-menu{width: 1840px;margin-left: 30px}
 .nav .sumopen a{font-size: 20px;background-color: #fff;color: #878889;border-radius: 10px}
+.nav .sumopen li a{background-color: #29313e;color: #fff}
 .sumopen:hover a{border-radius: 10px;background-color: #29313e;color: #fff}
 .nav .sumopen:hover a{background-color: #29313e;color: #fff;border-bottom-left-radius: 0px;border-bottom-right-radius: 0px;}
 .nav .sumopen:first-child a{border-radius: 10px}
@@ -243,7 +244,7 @@ footer{margin-bottom: 300px;}
 .tabs_sui{position: relative;z-index: 10;top: -1px}
 .form20_content{padding-top: 100px!important;background-color: #f5f5f5;}
 .form20_content .form40_title{padding: 20px 55px}
-.container_y1{height: 470px;line-height: 30px;padding: 30px 0}
+.container_y1{height: 470px;line-height: 30px;padding: 30px 0;top: -100px}
 .container_y1 img{margin-bottom: 25px;}
 .container_y1 p{font-size: 24px;color: #232121;margin-top: 20px;}
 .container_y1 input{width: 120px;height: 45px;background-color: #f7a654;color: #fff;margin-top: 50px;font-size: 20px;border-radius: 8px}
