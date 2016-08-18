@@ -169,10 +169,10 @@ footer{margin-bottom: 300px;}
 .index_btn4{background-color: #f5b473;color: #fff;border-radius: 8px}
 .index_btn5{background-color: #d66565;color: #fff;border-radius: 8px}
 .index_btn6{background-color: #d96ce6;color: #fff;border-radius: 8px}
-.con_list{width: 400px;margin: 4px 27px;height: 110px;border-radius: 10px;border: 1px solid #cacacb;position: relative;display: inline-block;overflow: visible;cursor: pointer;}
-.con_list p{width: 155px;height: 110px;line-height: 110px;text-align: center;color: #494949;border-right: 1px solid #bbe5d6;font-size: 18px}
-.con_ul{width: 188px;background-color: #fff;height: 110px;padding: 0 28px;color: #494949;border-top-right-radius: 8px;border-bottom-right-radius: 8px}
-.con_ul li{display: inline-block;width: 60px;height: 18px;line-height: 18px;font-size: 18px;margin: 8px 0 9px 0px;padding: 10px 15px;}
+.con_list{width: 20%;margin: 4px 2.3%;height: 110px;border-radius: 10px;border: 1px solid #cacacb;position: relative;display: inline-block;overflow: visible;cursor: pointer;}
+.con_list p{width: 40%;height: 110px;line-height: 110px;text-align: center;color: #494949;border-right: 1px solid #bbe5d6;font-size: 18px}
+.con_ul{width: calc(50% - 1px);background-color: #fff;height: 110px;padding: 0 5%;color: #494949;border-top-right-radius: 8px;border-bottom-right-radius: 8px}
+.con_ul li{display: inline-block;width: 48%;height: 18px;line-height: 18px;font-size: 18px;margin: 8px 0 9px 0px;padding: 10px 0;text-align: center;}
 .index_container{padding: 20px 10px;}
 .open_door{position: absolute;top: 111px;z-index: 1;font-size: 0;width: 710px;background-color: #fff;border-radius: 10px;border: 1px solid #cccccc;left: -1px}
 .con_list:nth-child(4n) .open_door{left: -311px;}
@@ -202,10 +202,10 @@ footer{margin-bottom: 300px;}
 .form_sty{padding: 45px 0;background-color: #fff;position: relative;border-radius: 5px;}
 .form_33{margin: 30px 20px 20px;}
 .form_sty ul{width: calc(100% - 330px)}
-.form_sty li{display: inline-block;max-width: 380px;margin: 10px 0;margin-left: 40px;font-size: 18px}
-.form_sty li span{margin-right: 0px;width: 127px}
-.form_sty li select{width: 200px;font-size: 18px;margin-bottom: 0;}
-.form_sty li input{width: 185px}
+.form_sty li{display: inline-block;width: 20%;margin: 10px 0;margin-left: 4.5%;font-size: 18px}
+.form_sty li span{margin-right: 0px;width: 98px;font-size: 14px;}
+.form_sty li select{width: calc(100% - 104px);font-size: 14px;margin-bottom: 0;}
+.form_sty li input{width: calc(100% - 118px);margin-bottom: 0;}
 .form_sty .form_btn{position: absolute;right: 10px;bottom: 45px;width: 330px}
 .form_btn input{width: 120px;height: 45px;line-height: 45px;border-radius: 5px;color: #fff;margin: 0 20px;font-size: 18px}
 .form_btn .search{background-color: #f89838;}
@@ -225,11 +225,14 @@ footer{margin-bottom: 300px;}
 .pages input{width: 20px;height: 11px;margin: -1px 5px 0}
 .pages li a{color: #fff;background-color: #f89838;}
 /*修改弹出窗*/
-.form10_open{position: fixed;width: 560px;top: 20px;left: calc(50% - 281px);background-color: #fff;border-radius:10px;border: 1px solid #ccc;box-shadow: 0 0 15px #000;}
-.form10_open td{padding-top: 15px;font-size: 16px;color: #494949}
-.form10_open td:first-child{width: 170px;text-align: right;margin-right: 10px;font-size: 16px;color: #494949}
-.form10_open th{height: 125px;line-height: 125px;font-size: 18px;color: #fff;background-color: #57c2b4;width: 560px;border-top-right-radius: 10px;border-top-left-radius: 10px;margin-bottom: 10px;}
-.form10_btn input{width: 430px;height: 50px;line-height: 50px;text-align: center;font-size: 16px;color: #494949;border-radius: 10px;margin: 5px 65px 10px;background-color: #fff;}
+.form10_open{position: fixed;width: 460px;top: 20px;left: calc(50% - 231px);background-color: #fff;border-radius:10px;border: 1px solid #ccc;box-shadow: 0 0 15px #000;}
+.form10_open td{font-size: 16px;color: #494949;vertical-align: middle;}
+.form10_open td:first-child{width: 150px;text-align: right;margin-right: 10px;font-size: 16px;color: #494949}
+.form10_open th{height: 50px;line-height: 50px;font-size: 18px;color: #fff;background-color: #57c2b4;width: 560px;border-top-right-radius: 10px;border-top-left-radius: 10px;margin-bottom: 10px;}
+.form10_open tr{height: 40px;line-height: 40px;}
+.form10_open tr:last-child{height: 80px}
+.form10_open select,.form10_open textarea,.form10_open input{margin-bottom: 0;}
+.form10_btn input{width: 330px;height: 40px;line-height: 40px;text-align: center;font-size: 16px;color: #494949;border-radius: 10px;margin: 10px 65px 10px;background-color: #ebebeb;}
 .form10_btn input:hover{background-color: #f89838;color: #fff}
 .form10_open1{width: 480px;left: calc(50% - 241px)}
 .form10_open1 input{width: 350px}
@@ -259,7 +262,6 @@ label, input, button, select, textarea{font-family: "Microsoft Yahei"}
 body.full-height-layout #page-wrapper{height: calc(100% - 140px)}
 .over_auto{width: 100%;overflow: auto;}
 input[type="text"]{padding: 0 6px;height: 28px;line-height: 28px;}
-
 
 
 
