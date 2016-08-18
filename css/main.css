@@ -169,7 +169,7 @@ footer{margin-bottom: 300px;}
 .index_btn4{background-color: #f5b473;color: #fff;border-radius: 8px}
 .index_btn5{background-color: #d66565;color: #fff;border-radius: 8px}
 .index_btn6{background-color: #d96ce6;color: #fff;border-radius: 8px}
-.con_list{width: 20%;margin: 4px 2.3%;height: 110px;border-radius: 10px;border: 1px solid #cacacb;position: relative;display: inline-block;overflow: visible;cursor: pointer;}
+.con_list{width: 18%;margin: 4px 0.79%;height: 110px;border-radius: 10px;border: 1px solid #cacacb;position: relative;display: inline-block;overflow: visible;cursor: pointer;}
 .con_list p{width: 40%;height: 110px;line-height: 110px;text-align: center;color: #494949;border-right: 1px solid #bbe5d6;font-size: 18px}
 .con_ul{width: calc(50% - 1px);background-color: #fff;height: 110px;padding: 0 5%;color: #494949;border-top-right-radius: 8px;border-bottom-right-radius: 8px}
 .con_ul li{display: inline-block;width: 48%;height: 18px;line-height: 18px;font-size: 18px;margin: 8px 0 9px 0px;padding: 10px 0;text-align: center;}
